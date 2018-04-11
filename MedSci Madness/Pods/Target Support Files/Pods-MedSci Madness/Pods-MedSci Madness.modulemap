@@ -1,0 +1,6 @@
+framework module Pods_MedSci_Madness {
+  umbrella header "Pods-MedSci Madness-umbrella.h"
+
+  export *
+  module * { export * }
+}

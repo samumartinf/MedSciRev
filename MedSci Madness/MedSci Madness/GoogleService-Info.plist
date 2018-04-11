@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>501024423950-h6qtkun2092glok19td5g9oavk1qhq48.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.501024423950-h6qtkun2092glok19td5g9oavk1qhq48</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA7v2xo4lhrAYclVlaA2dJN1HT-xcQbxrc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>501024423950</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.HeidelbergSchule.MedSci-Madness</string>
+	<key>PROJECT_ID</key>
+	<string>medsci-madness</string>
+	<key>STORAGE_BUCKET</key>
+	<string>medsci-madness.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:501024423950:ios:b256bee78e9f4d6e</string>
+	<key>DATABASE_URL</key>
+	<string>https://medsci-madness.firebaseio.com</string>
+</dict>
+</plist>
