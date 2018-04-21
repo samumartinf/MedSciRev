@@ -19,7 +19,7 @@ class QuestionService{
     var answers = [String]()
     var solution = -1
     
-    func generateQuestion(completion: @escaping (Bool) -> ()) -> (question: String, answers: [String], solution: Int){
+    func generateQuestion(completion: @escaping (Bool) -> () ) -> (question: String, answers: [String], solution: Int){
         db.collection("questions").getDocuments { (snapshot, error) in
             if let error = error{
                 print("Error retrieving data \(error.localizedDescription)")
@@ -43,7 +43,7 @@ class QuestionService{
             let uploadData = ["question": question, "answers": answers, "solution":solution] as [String:Any]
             db.collection("questions").addDocument(data: uploadData)
             print("Successful upload of question")
-        }
+    }
     
     
 }

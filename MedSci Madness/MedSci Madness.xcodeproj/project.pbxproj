@@ -21,7 +21,9 @@
 		A830BA6E2073999800B5288A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A830BA6D2073999800B5288A /* GradientView.swift */; };
 		A830BA722073A7A200B5288A /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A830BA712073A7A200B5288A /* RoundedButton.swift */; };
 		A830BAB42073B48F00B5288A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A830BAB32073B48F00B5288A /* GoogleService-Info.plist */; };
+		A88DEEDB208A241400F4895C /* RoundedLbl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88DEEDA208A241400F4895C /* RoundedLbl.swift */; };
 		A8CC7D99207B998300AFC55E /* UploadQuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CC7D98207B998300AFC55E /* UploadQuestionVC.swift */; };
+		A8FFD467207E142700809226 /* AnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FFD466207E142700809226 /* AnswerTableViewCell.swift */; };
 		D5907BE60DFF091A92E0AA6B /* Pods_MedSci_MadnessUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 728C93DDF9C1814A9016AF30 /* Pods_MedSci_MadnessUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +67,9 @@
 		A830BA6D2073999800B5288A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		A830BA712073A7A200B5288A /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		A830BAB32073B48F00B5288A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A88DEEDA208A241400F4895C /* RoundedLbl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedLbl.swift; sourceTree = "<group>"; };
 		A8CC7D98207B998300AFC55E /* UploadQuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadQuestionVC.swift; sourceTree = "<group>"; };
+		A8FFD466207E142700809226 /* AnswerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTableViewCell.swift; sourceTree = "<group>"; };
 		BCFFA9346111C9855C205774 /* Pods-MedSci Madness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedSci Madness.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedSci Madness/Pods-MedSci Madness.release.xcconfig"; sourceTree = "<group>"; };
 		CDF52C7CD4BA9FE964853F17 /* Pods-MedSci MadnessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedSci MadnessTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedSci MadnessTests/Pods-MedSci MadnessTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D23CB861717D9F3F42E7FA34 /* Pods_MedSci_MadnessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedSci_MadnessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +208,7 @@
 				A830BA6D2073999800B5288A /* GradientView.swift */,
 				A830BA712073A7A200B5288A /* RoundedButton.swift */,
 				A822D989207B91E70009C797 /* RoundedImageView.swift */,
+				A88DEEDA208A241400F4895C /* RoundedLbl.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 		A830BA6C2073993A00B5288A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A8FFD466207E142700809226 /* AnswerTableViewCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -503,7 +509,9 @@
 				A822D986207B7C330009C797 /* QuestionService.swift in Sources */,
 				A830BA6E2073999800B5288A /* GradientView.swift in Sources */,
 				A8CC7D99207B998300AFC55E /* UploadQuestionVC.swift in Sources */,
+				A88DEEDB208A241400F4895C /* RoundedLbl.swift in Sources */,
 				A830BA722073A7A200B5288A /* RoundedButton.swift in Sources */,
+				A8FFD467207E142700809226 /* AnswerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
