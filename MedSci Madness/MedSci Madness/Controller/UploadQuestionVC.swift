@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UploadQuestionVC: UIViewController{
+class UploadQuestionVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
     @IBOutlet weak var questionTxtField: UITextField!
     @IBOutlet weak var answer1TxtField: UITextField!
@@ -22,27 +22,48 @@ class UploadQuestionVC: UIViewController{
     @IBOutlet weak var sol4: RoundedButton!
     @IBOutlet weak var sol5: RoundedButton!
     @IBOutlet weak var solutionLbl: UILabel!
-    
-
+    @IBOutlet weak var selector: UISegmentedControl!
+    @IBOutlet weak var mcqStackView: UIStackView!
+    @IBOutlet weak var longAnswerStackView: UIStackView!
+    @IBOutlet weak var longTxtView: UITextView!
+    @IBOutlet weak var imagePreview: UIImageView!
     
     var solution: Int?
+    var questionType: Int?
+    let picker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        picker.delegate = self
+        picker.allowsEditing = true
     }
 
     @IBAction func uploadPressed(_ sender: Any) {
-        if questionTxtField.text != "" && answer1TxtField.text != "" && answer2TxtField.text != "" && answer3TxtField.text != "" && solution != nil{
-            let question = questionTxtField.text
-            var answers = [answer1TxtField.text!,answer2TxtField.text!,answer3TxtField.text!]
-            if answer4TxtField.text != "" || answer4TxtField.text != nil {
-                answers.append(answer4TxtField.text!)
+        if selector.selectedSegmentIndex == 0 {
+            if questionTxtField.text != "" && answer1TxtField.text != "" && answer2TxtField.text != "" && answer3TxtField.text != "" && solution != nil{
+                let question = questionTxtField.text
+                var answers = [answer1TxtField.text!,answer2TxtField.text!,answer3TxtField.text!]
+                if answer4TxtField.text != "" || answer4TxtField.text != nil {
+                    answers.append(answer4TxtField.text!)
+                }
+                if answer5TxtField.text != "" || answer4TxtField.text != nil {
+                    answers.append(answer5TxtField.text!)
+                }
+                QuestionService.instance.uploadQuestion(question: question!, answers: answers, solution: solution!)
+                
             }
-            if answer5TxtField.text != "" || answer4TxtField.text != nil {
-                answers.append(answer5TxtField.text!)
+        }
+        
+        if selector.selectedSegmentIndex == 1 {
+            if questionTxtField.text != nil && (longTxtView.text != "Blah blah blah long answer here..." || longTxtView.text != nil) {
+                if imagePreview.image != #imageLiteral(resourceName: "imperialCrest") && imagePreview.image != nil {
+                    QuestionService.instance.uploadLongQuestion(question: questionTxtField.text!, answer: longTxtView.text!, image: imagePreview.image!)
+                    self.dismiss(animated: true, completion: nil)
+                } else {
+                    QuestionService.instance.uploadLongQuestion(question: questionTxtField.text!, answer: longTxtView.text!, image: nil)
+                    self.dismiss(animated: true, completion: nil)
+                }
             }
-            QuestionService.instance.uploadQuestion(question: question!, answers: answers, solution: solution!)
-            self.dismiss(animated: true, completion: nil)
         }
     }
     
@@ -86,9 +107,34 @@ class UploadQuestionVC: UIViewController{
         solutionLbl.text = "Solution: 5"
     }
     
+    @IBAction func questionSelector(_ sender: Any) {
+        if selector.selectedSegmentIndex == 0 {
+            mcqStackView.isHidden = false
+            longAnswerStackView.isHidden = true
+        } else {
+            mcqStackView.isHidden = true
+            longAnswerStackView.isHidden = false
+        }
+    }
     
+    @IBAction func uploadPicturePressed(_ sender: Any) {
+        self.present(self.picker, animated: true, completion: nil)
+    }
     
-    
-    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        var selectedImage: UIImage?
+        if let editedImage = info["UIImagePickerControllerEditedImage"] as? UIImage{
+            selectedImage = editedImage
+        }else if let originalImage = info["UIImagePickerControllerOrignialImage"] as? UIImage{
+            selectedImage = originalImage
+        }
+        
+        if let image = selectedImage{
+            self.imagePreview.image = image
+        }
+        
+        dismiss(animated: true, completion: nil)
+    }
     
 }

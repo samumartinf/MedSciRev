@@ -24,9 +24,9 @@ class QuestionsVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     
     var questions = [[String:Any]]()
     
-    
     var question: String = ""
     var answers: [String] = ["Tap", "Refresh", "To get", "New", "Questions"]
+    var longAnswer: String = ""
     var solution = -1
     var correct: Float = 0
     var incorrect: Float = 0

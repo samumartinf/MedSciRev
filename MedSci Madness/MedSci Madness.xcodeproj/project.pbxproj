@@ -21,6 +21,7 @@
 		A830BA6E2073999800B5288A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A830BA6D2073999800B5288A /* GradientView.swift */; };
 		A830BA722073A7A200B5288A /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A830BA712073A7A200B5288A /* RoundedButton.swift */; };
 		A830BAB42073B48F00B5288A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A830BAB32073B48F00B5288A /* GoogleService-Info.plist */; };
+		A86DFF1A208B8CE4007F91E6 /* LongQuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86DFF19208B8CE4007F91E6 /* LongQuestionVC.swift */; };
 		A88DEEDB208A241400F4895C /* RoundedLbl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88DEEDA208A241400F4895C /* RoundedLbl.swift */; };
 		A8CC7D99207B998300AFC55E /* UploadQuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CC7D98207B998300AFC55E /* UploadQuestionVC.swift */; };
 		A8FFD467207E142700809226 /* AnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FFD466207E142700809226 /* AnswerTableViewCell.swift */; };
@@ -67,6 +68,7 @@
 		A830BA6D2073999800B5288A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		A830BA712073A7A200B5288A /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		A830BAB32073B48F00B5288A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A86DFF19208B8CE4007F91E6 /* LongQuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongQuestionVC.swift; sourceTree = "<group>"; };
 		A88DEEDA208A241400F4895C /* RoundedLbl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedLbl.swift; sourceTree = "<group>"; };
 		A8CC7D98207B998300AFC55E /* UploadQuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadQuestionVC.swift; sourceTree = "<group>"; };
 		A8FFD466207E142700809226 /* AnswerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTableViewCell.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			children = (
 				A830BA3E2073991500B5288A /* QuestionsVC.swift */,
 				A8CC7D98207B998300AFC55E /* UploadQuestionVC.swift */,
+				A86DFF19208B8CE4007F91E6 /* LongQuestionVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -507,6 +510,7 @@
 				A830BA3D2073991500B5288A /* AppDelegate.swift in Sources */,
 				A822D98A207B91E70009C797 /* RoundedImageView.swift in Sources */,
 				A822D986207B7C330009C797 /* QuestionService.swift in Sources */,
+				A86DFF1A208B8CE4007F91E6 /* LongQuestionVC.swift in Sources */,
 				A830BA6E2073999800B5288A /* GradientView.swift in Sources */,
 				A8CC7D99207B998300AFC55E /* UploadQuestionVC.swift in Sources */,
 				A88DEEDB208A241400F4895C /* RoundedLbl.swift in Sources */,

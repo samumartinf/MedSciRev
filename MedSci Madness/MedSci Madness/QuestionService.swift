@@ -14,6 +14,9 @@ class QuestionService{
     
     let docRef = Firestore.firestore().document("questions/q0")
     let db = Firestore.firestore()
+    let storage = Storage.storage()
+    
+
     
     var question: String = ""
     var answers = [String]()
@@ -43,6 +46,32 @@ class QuestionService{
             let uploadData = ["question": question, "answers": answers, "solution":solution] as [String:Any]
             db.collection("questions").addDocument(data: uploadData)
             print("Successful upload of question")
+    }
+    
+    func uploadLongQuestion(question: String, answer: String, image:UIImage?) {
+        var uploadData = ["question": question, "answer": answer]
+        
+        if let image = image{
+            if let data: Data = UIImagePNGRepresentation(image){
+                let storageRef = storage.reference()
+                let diceRoll = Int(arc4random_uniform(100000000))
+                let imageRef = storageRef.child("\(String(diceRoll)).png")
+                imageRef.putData(data, metadata: nil, completion: { (metadata,error ) in
+                    if error == nil{
+                        if let downloadURL = metadata?.downloadURL(){
+                            uploadData["imageURL"] = downloadURL.absoluteString
+                            self.db.collection("longQuestions").addDocument(data: uploadData)
+                            print(uploadData)
+                        }
+                        return
+                    } else {
+                        print(error?.localizedDescription)
+                    }
+                })
+            }
+        } else {
+            db.collection("longQuestions").addDocument(data: uploadData)
+        }
     }
     
     

@@ -9,7 +9,7 @@ target 'MedSci Madness' do
 
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
-  
+  pod 'Firebase/Storage'
 
   target 'MedSci MadnessTests' do
     inherit! :search_paths

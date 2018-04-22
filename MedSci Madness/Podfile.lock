@@ -11,6 +11,9 @@ PODS:
   - Firebase/Firestore (4.9.0):
     - Firebase/Core
     - FirebaseFirestore (= 0.10.1)
+  - Firebase/Storage (4.9.0):
+    - Firebase/Core
+    - FirebaseStorage (= 2.1.2)
   - FirebaseAnalytics (4.0.9):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
@@ -26,6 +29,10 @@ PODS:
     - Protobuf (~> 3.1)
   - FirebaseInstanceID (2.0.9):
     - FirebaseCore (~> 4.0)
+  - FirebaseStorage (2.1.2):
+    - FirebaseAnalytics (~> 4.0)
+    - FirebaseCore (~> 4.0)
+    - GTMSessionFetcher/Core (~> 1.1)
   - GoogleToolboxForMac/Defines (2.1.3)
   - GoogleToolboxForMac/NSData+zlib (2.1.3):
     - GoogleToolboxForMac/Defines (= 2.1.3)
@@ -48,6 +55,7 @@ PODS:
   - gRPC/Main (1.10.0):
     - gRPC-Core (= 1.10.0)
     - gRPC-RxLibrary (= 1.10.0)
+  - GTMSessionFetcher/Core (1.1.14)
   - leveldb-library (1.20)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
@@ -59,6 +67,7 @@ PODS:
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/Firestore
+  - Firebase/Storage
 
 SPEC CHECKSUMS:
   BoringSSL: 32764dbaf5f5888cf51fbaa172a010126b41bcd4
@@ -67,15 +76,17 @@ SPEC CHECKSUMS:
   FirebaseCore: 3bd047463058fa6b5d312c97502c52e45401cdfb
   FirebaseFirestore: a6db7a47c6a47d26069892d7db39f7792f2f7f9a
   FirebaseInstanceID: d2058a35e9bebda1b6dd42486b84917bde552a9d
+  FirebaseStorage: 181bb543d39ee3c53e0558de7ba86b1286a0427f
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   gRPC: f54f0e6d603052b4562447da442ce2ff30bcdacc
   gRPC-Core: a030b1678ded49c88ec5ba7c90ee8ee5f47ec6e1
   gRPC-ProtoRPC: 22712b23eb1bda656a59715fa5c1da0ea1493ea4
   gRPC-RxLibrary: a41a4652d220f230ba1c0491a94ce2ee04c6180a
+  GTMSessionFetcher: 390ea358e5a0d0133153806f744662dad933d06b
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
 
-PODFILE CHECKSUM: 47da1d1badd02c6fa810a233fbe7303c303becbc
+PODFILE CHECKSUM: f1f0b7c33d1c1b3df31929b19c3cf0b364ba75e5
 
 COCOAPODS: 1.2.0
