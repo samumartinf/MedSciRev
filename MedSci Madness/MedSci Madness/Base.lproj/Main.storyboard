@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,23 +15,20 @@
             <objects>
                 <viewController id="eBL-mk-gNN" customClass="LongQuestionVC" customModule="MedSci_Madness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qUP-yv-c1e" customClass="GradientView" customModule="MedSci_Madness" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NOE-mk-Dzg">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MedSci Madness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifR-bk-89w">
-                                        <rect key="frame" x="108" y="36" width="160" height="26"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="160" id="gGF-SK-TI2"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MedSci" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifR-bk-89w">
+                                        <rect key="frame" x="128" y="36" width="65.5" height="26"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pn1-za-iX5">
-                                        <rect key="frame" x="295" y="27" width="75" height="45"/>
+                                        <rect key="frame" x="240" y="27" width="75" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="75" id="TWU-SP-N4h"/>
                                             <constraint firstAttribute="height" constant="45" id="vD1-Iz-kBI"/>
@@ -59,7 +56,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.24313725489999999" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.082352941176470587" green="0.22352941176470587" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="ifR-bk-89w" firstAttribute="centerX" secondItem="NOE-mk-Dzg" secondAttribute="centerX" id="Aey-3t-yiG"/>
                                     <constraint firstItem="Pn1-za-iX5" firstAttribute="centerY" secondItem="ifR-bk-89w" secondAttribute="centerY" id="Auu-ms-ZxM"/>
@@ -80,17 +77,17 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQx-ft-bN8" userLabel="Question Holder">
-                                <rect key="frame" x="30" y="90" width="315" height="190"/>
+                                <rect key="frame" x="30" y="90" width="260" height="150"/>
                                 <subviews>
                                     <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imperialCrest" translatesAutoresizingMaskIntoConstraints="NO" id="kEu-1Q-R9i" userLabel="ImageQuestion" customClass="RoundedImageView" customModule="MedSci_Madness" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="190"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="150"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="kEu-1Q-R9i" secondAttribute="trailing" id="WOo-CO-wqx"/>
                                     <constraint firstItem="kEu-1Q-R9i" firstAttribute="leading" secondItem="IQx-ft-bN8" secondAttribute="leading" id="abQ-ar-hMu"/>
                                     <constraint firstAttribute="bottom" secondItem="kEu-1Q-R9i" secondAttribute="bottom" id="iuY-ch-b1g"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="190" id="nm7-2h-5Vc"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="nm7-2h-5Vc"/>
                                     <constraint firstItem="kEu-1Q-R9i" firstAttribute="top" secondItem="IQx-ft-bN8" secondAttribute="top" id="wiP-G7-FZV"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -103,7 +100,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cool question will appear here!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6qt-1n-3SN">
-                                <rect key="frame" x="15" y="288" width="345" height="50"/>
+                                <rect key="frame" x="15" y="248" width="290" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="2Wi-JC-i55"/>
                                 </constraints>
@@ -112,10 +109,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CyA-im-Wjw">
-                                <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                                <rect key="frame" x="0.0" y="523" width="320" height="45"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8O-bS-Cfb">
-                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="45"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="45"/>
                                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="0Qj-Kh-Xad"/>
@@ -129,7 +126,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jp5-yk-j0o">
-                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="45"/>
+                                        <rect key="frame" x="160" y="0.0" width="160" height="45"/>
                                         <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="6BQ-52-gca"/>
@@ -145,7 +142,7 @@
                                 </subviews>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Write your answer here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2ob-dT-WN4">
-                                <rect key="frame" x="16" y="346" width="343" height="100"/>
+                                <rect key="frame" x="16" y="306" width="288" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="sFe-eu-Myf"/>
@@ -154,13 +151,13 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Provided answer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqZ-1j-QLB">
-                                <rect key="frame" x="15" y="461" width="133" height="23.5"/>
+                                <rect key="frame" x="15" y="421" width="133" height="23.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="The answer is currently hidden, press correct to show the answer." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckM-nH-XZ1">
-                                <rect key="frame" x="16" y="491.5" width="343" height="115.5"/>
+                                <rect key="frame" x="16" y="451.5" width="288" height="56.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
@@ -217,15 +214,15 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="QuestionsVC" customModule="MedSci_Madness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="GradientView" customModule="MedSci_Madness" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Ya3-Ee-epL">
-                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <rect key="frame" x="141.5" y="265.5" width="37" height="37"/>
                                 <color key="color" red="1" green="0.57647058819999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cool question will appear here!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3mo-nO-R8M">
-                                <rect key="frame" x="15" y="260" width="345" height="50"/>
+                                <rect key="frame" x="15" y="260" width="290" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="x4S-4K-XZ4"/>
                                 </constraints>
@@ -234,7 +231,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ara-Qc-8pe">
-                                <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                                <rect key="frame" x="0.0" y="523" width="320" height="45"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="41Z-6Y-G71"/>
@@ -248,14 +245,14 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="30" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="d3I-Jl-T26">
-                                <rect key="frame" x="15" y="318" width="345" height="246.5"/>
+                                <rect key="frame" x="15" y="318" width="290" height="147.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="answerCell" rowHeight="30" id="nNp-Qc-Bma" customClass="AnswerTableViewCell" customModule="MedSci_Madness" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="345" height="30"/>
+                                        <rect key="frame" x="0.0" y="28" width="290" height="30"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nNp-Qc-Bma" id="7LF-IZ-94Q">
-                                            <rect key="frame" x="0.0" y="0.0" width="345" height="30"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="290" height="30"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="possible answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGN-OK-IS6">
@@ -295,19 +292,16 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UA5-kt-GBZ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MedSci Madness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUf-Np-NlR">
-                                        <rect key="frame" x="107.5" y="36" width="160" height="26"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="160" id="uos-Dd-Mpg"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MedSci" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUf-Np-NlR">
+                                        <rect key="frame" x="127.5" y="36" width="65.5" height="26"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJh-ZC-ufi">
-                                        <rect key="frame" x="295" y="27" width="75" height="45"/>
+                                        <rect key="frame" x="240" y="27" width="75" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="75" id="Urg-ct-C1Z"/>
                                             <constraint firstAttribute="height" constant="45" id="dNm-8W-CPz"/>
@@ -335,7 +329,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.24313725489999999" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.082352941176470587" green="0.22352941176470587" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="sJh-ZC-ufi" secondAttribute="trailing" constant="5" id="BxP-Oo-r9I"/>
                                     <constraint firstItem="sJh-ZC-ufi" firstAttribute="centerY" secondItem="aUf-Np-NlR" secondAttribute="centerY" id="GdD-re-Z4E"/>
@@ -355,13 +349,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKk-z4-nJx">
-                                <rect key="frame" x="158.5" y="574.5" width="58" height="18"/>
+                                <rect key="frame" x="131" y="475.5" width="58" height="18"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="7mP-JE-OJy">
-                                <rect key="frame" x="87.5" y="600.5" width="200" height="2.5"/>
+                                <rect key="frame" x="60" y="501.5" width="200" height="2.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="vdJ-RR-cEX"/>
                                 </constraints>
@@ -376,18 +370,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aga-WC-1IV">
-                                <rect key="frame" x="30" y="90" width="315" height="150"/>
+                                <rect key="frame" x="30" y="90" width="260" height="150"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imperialCrest" translatesAutoresizingMaskIntoConstraints="NO" id="q4F-Hz-EoT" userLabel="ImageQuestion" customClass="RoundedImageView" customModule="MedSci_Madness" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="20" width="275" height="110"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="150"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="CYp-uY-7mP"/>
-                                    <constraint firstAttribute="bottom" secondItem="q4F-Hz-EoT" secondAttribute="bottom" constant="20" id="ELY-ir-rlx"/>
-                                    <constraint firstAttribute="trailing" secondItem="q4F-Hz-EoT" secondAttribute="trailing" constant="20" id="FWX-hZ-GWT"/>
-                                    <constraint firstItem="q4F-Hz-EoT" firstAttribute="leading" secondItem="Aga-WC-1IV" secondAttribute="leading" constant="20" id="aRe-XK-eAs"/>
-                                    <constraint firstItem="q4F-Hz-EoT" firstAttribute="top" secondItem="Aga-WC-1IV" secondAttribute="top" constant="20" id="q7p-pE-WU0"/>
+                                    <constraint firstAttribute="bottom" secondItem="q4F-Hz-EoT" secondAttribute="bottom" id="ELY-ir-rlx"/>
+                                    <constraint firstAttribute="trailing" secondItem="q4F-Hz-EoT" secondAttribute="trailing" id="FWX-hZ-GWT"/>
+                                    <constraint firstItem="q4F-Hz-EoT" firstAttribute="leading" secondItem="Aga-WC-1IV" secondAttribute="leading" id="aRe-XK-eAs"/>
+                                    <constraint firstItem="q4F-Hz-EoT" firstAttribute="top" secondItem="Aga-WC-1IV" secondAttribute="top" id="q7p-pE-WU0"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="topColor">
@@ -456,14 +450,14 @@
             <objects>
                 <viewController id="zZO-um-AIa" customClass="UploadQuestionVC" customModule="MedSci_Madness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S9D-eU-C75" customClass="GradientView" customModule="MedSci_Madness" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6du-Gb-vY3">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MedSci Madness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5t-hr-BQa">
-                                        <rect key="frame" x="113.5" y="36" width="148.5" height="26"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MedSci" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5t-hr-BQa">
+                                        <rect key="frame" x="127.5" y="36" width="65.5" height="26"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -483,7 +477,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.24313725490196078" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.082352941176470587" green="0.22352941176470587" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="dkY-O2-f1k" firstAttribute="leading" secondItem="6du-Gb-vY3" secondAttribute="leading" constant="10" id="54S-yj-irP"/>
                                     <constraint firstAttribute="bottom" secondItem="b5t-hr-BQa" secondAttribute="bottom" constant="8" id="TVX-FZ-PNR"/>
@@ -501,7 +495,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qQM-Ym-kp2">
-                                <rect key="frame" x="20" y="158.5" width="335" height="328.5"/>
+                                <rect key="frame" x="20" y="158.5" width="280" height="328.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjV-8m-AZB">
                                         <rect key="frame" x="0.0" y="0.0" width="71" height="23.5"/>
@@ -510,28 +504,28 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What is the powerhose of the cell" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7GZ-KA-AMF">
-                                        <rect key="frame" x="0.0" y="31.5" width="325" height="30"/>
+                                        <rect key="frame" x="0.0" y="31.5" width="270" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="v9Q-2Y-WBM">
-                                        <rect key="frame" x="0.0" y="69.5" width="325" height="259"/>
+                                        <rect key="frame" x="0.0" y="69.5" width="270" height="259"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Possible answers: (at least 3) " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eg-bT-n4g">
-                                                <rect key="frame" x="0.0" y="0.0" width="325" height="23.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="270" height="23.5"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mark the correct solution by tapping on the correct number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JM3-8E-3f2">
-                                                <rect key="frame" x="0.0" y="33.5" width="325" height="12"/>
+                                                <rect key="frame" x="0.0" y="33.5" width="270" height="12"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="usd-Ec-EeC">
-                                                <rect key="frame" x="0.0" y="55.5" width="325" height="26"/>
+                                                <rect key="frame" x="0.0" y="55.5" width="270" height="26"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dj8-U9-S64" customClass="RoundedButton" customModule="MedSci_Madness" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="26" height="26"/>
@@ -548,7 +542,7 @@
                                                         </connections>
                                                     </button>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cool answer 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4sj-bo-6Zo">
-                                                        <rect key="frame" x="36" y="0.0" width="289" height="26"/>
+                                                        <rect key="frame" x="36" y="0.0" width="234" height="26"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -556,7 +550,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lS2-3j-x0b">
-                                                <rect key="frame" x="0.0" y="91.5" width="325" height="26"/>
+                                                <rect key="frame" x="0.0" y="91.5" width="270" height="26"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZX-y2-lo5" customClass="RoundedButton" customModule="MedSci_Madness" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="26" height="26"/>
@@ -573,7 +567,7 @@
                                                         </connections>
                                                     </button>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cool answer 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KBu-Kx-KfW">
-                                                        <rect key="frame" x="36" y="0.0" width="289" height="26"/>
+                                                        <rect key="frame" x="36" y="0.0" width="234" height="26"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -581,7 +575,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vE4-D1-aHc">
-                                                <rect key="frame" x="0.0" y="127.5" width="325" height="26"/>
+                                                <rect key="frame" x="0.0" y="127.5" width="270" height="26"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dm3-Rd-Yoj" customClass="RoundedButton" customModule="MedSci_Madness" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="26" height="26"/>
@@ -598,7 +592,7 @@
                                                         </connections>
                                                     </button>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cool answer 3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vi9-lr-PKG">
-                                                        <rect key="frame" x="36" y="0.0" width="289" height="26"/>
+                                                        <rect key="frame" x="36" y="0.0" width="234" height="26"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -606,7 +600,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UXn-rl-XmG">
-                                                <rect key="frame" x="0.0" y="163.5" width="325" height="26"/>
+                                                <rect key="frame" x="0.0" y="163.5" width="270" height="26"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BuO-ui-5Iq" customClass="RoundedButton" customModule="MedSci_Madness" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="26" height="26"/>
@@ -623,7 +617,7 @@
                                                         </connections>
                                                     </button>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Optional cool answer 4" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h0i-Y6-sr8">
-                                                        <rect key="frame" x="36" y="0.0" width="289" height="26"/>
+                                                        <rect key="frame" x="36" y="0.0" width="234" height="26"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -632,7 +626,7 @@
                                                 <viewLayoutGuide key="safeArea" id="dGL-oh-GDY"/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Non-bS-NLw">
-                                                <rect key="frame" x="0.0" y="199.5" width="325" height="26"/>
+                                                <rect key="frame" x="0.0" y="199.5" width="270" height="26"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8id-aR-CG6" customClass="RoundedButton" customModule="MedSci_Madness" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="26" height="26"/>
@@ -649,7 +643,7 @@
                                                         </connections>
                                                     </button>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Optional cool answer 5" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jJ8-cg-hBv">
-                                                        <rect key="frame" x="36" y="0.0" width="289" height="26"/>
+                                                        <rect key="frame" x="36" y="0.0" width="234" height="26"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -658,7 +652,7 @@
                                                 <viewLayoutGuide key="safeArea" id="HLD-pX-BM9"/>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solution: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jfk-WG-Y3U">
-                                                <rect key="frame" x="0.0" y="235.5" width="325" height="23.5"/>
+                                                <rect key="frame" x="0.0" y="235.5" width="270" height="23.5"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -666,7 +660,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="y9T-dg-al9" userLabel="Long Answer stack view">
-                                        <rect key="frame" x="0.0" y="328.5" width="335" height="230"/>
+                                        <rect key="frame" x="0.0" y="328.5" width="280" height="230"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please write your answer here:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STW-gm-ATB">
                                                 <rect key="frame" x="0.0" y="0.0" width="235.5" height="0.0"/>
@@ -675,7 +669,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Blah blah blah long answer here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xkg-9K-lsU">
-                                                <rect key="frame" x="0.0" y="10" width="335" height="80"/>
+                                                <rect key="frame" x="0.0" y="10" width="280" height="80"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="no3-8g-Av8"/>
@@ -684,7 +678,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQu-25-mIa" customClass="RoundedButton" customModule="MedSci_Madness" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="100" width="335" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="100" width="280" height="0.0"/>
                                                 <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                                 <state key="normal" title="Upload Picture">
@@ -695,7 +689,7 @@
                                                 </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imperialCrest" translatesAutoresizingMaskIntoConstraints="NO" id="EIX-E8-4Fz">
-                                                <rect key="frame" x="0.0" y="110" width="335" height="120"/>
+                                                <rect key="frame" x="0.0" y="110" width="280" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="120" id="Xct-FC-6t7"/>
                                                 </constraints>
@@ -717,7 +711,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJ3-EC-EUH">
-                                <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                                <rect key="frame" x="0.0" y="523" width="320" height="45"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="ECr-bL-MEe"/>
@@ -732,7 +726,7 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iFM-58-Bqi">
-                                <rect key="frame" x="142" y="116.5" width="91" height="29"/>
+                                <rect key="frame" x="114.5" y="116.5" width="91" height="29"/>
                                 <segments>
                                     <segment title="MCQ"/>
                                     <segment title="Long"/>
@@ -804,7 +798,7 @@
         <image name="imperialCrest" width="2000" height="2133"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5eH-dI-26P"/>
-        <segue reference="723-7e-iDf"/>
+        <segue reference="KZq-7q-mCM"/>
+        <segue reference="xN2-il-YUd"/>
     </inferredMetricsTieBreakers>
 </document>

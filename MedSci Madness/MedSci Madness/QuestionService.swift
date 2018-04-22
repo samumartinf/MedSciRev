@@ -73,6 +73,4 @@ class QuestionService{
             db.collection("longQuestions").addDocument(data: uploadData)
         }
     }
-    
-    
 }
