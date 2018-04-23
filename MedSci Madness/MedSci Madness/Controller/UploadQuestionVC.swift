@@ -36,6 +36,12 @@ class UploadQuestionVC: UIViewController, UIImagePickerControllerDelegate, UINav
         super.viewDidLoad()
         picker.delegate = self
         picker.allowsEditing = true
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard(){
+        view.endEditing(true)
     }
 
     @IBAction func uploadPressed(_ sender: Any) {
@@ -43,10 +49,10 @@ class UploadQuestionVC: UIViewController, UIImagePickerControllerDelegate, UINav
             if questionTxtField.text != "" && answer1TxtField.text != "" && answer2TxtField.text != "" && answer3TxtField.text != "" && solution != nil{
                 let question = questionTxtField.text
                 var answers = [answer1TxtField.text!,answer2TxtField.text!,answer3TxtField.text!]
-                if answer4TxtField.text != "" || answer4TxtField.text != nil {
+                if answer4TxtField.text != "" && answer4TxtField.text != nil {
                     answers.append(answer4TxtField.text!)
                 }
-                if answer5TxtField.text != "" || answer4TxtField.text != nil {
+                if answer5TxtField.text != "" && answer4TxtField.text != nil {
                     answers.append(answer5TxtField.text!)
                 }
                 QuestionService.instance.uploadQuestion(question: question!, answers: answers, solution: solution!)
@@ -65,6 +71,7 @@ class UploadQuestionVC: UIViewController, UIImagePickerControllerDelegate, UINav
                 }
             }
         }
+        self.dismiss(animated: true, completion: nil)
     }
     
     func unselectAll(){

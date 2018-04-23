@@ -38,6 +38,8 @@ class QuestionsVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         questionHolderView.layer.cornerRadius = 6
         questionHolderView.setNeedsLayout()
         tableView.isHidden = true
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -46,6 +48,10 @@ class QuestionsVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         setupView()
         downloadQuestions()
         tableView.reloadData()
+    }
+    
+    @objc func dismissKeyboard(){
+        view.endEditing(true)
     }
     
     func downloadQuestions(){

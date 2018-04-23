@@ -25,7 +25,13 @@ class LongQuestionVC: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         downloadQuestions()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func dismissKeyboard(){
+        view.endEditing(true)
     }
     
     func downloadQuestions(){
