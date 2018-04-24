@@ -36,8 +36,8 @@ class UploadQuestionVC: UIViewController, UIImagePickerControllerDelegate, UINav
         super.viewDidLoad()
         picker.delegate = self
         picker.allowsEditing = true
-        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-        view.addGestureRecognizer(tap)
+        let pan = UIPanGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(pan)
     }
     
     @objc func dismissKeyboard(){

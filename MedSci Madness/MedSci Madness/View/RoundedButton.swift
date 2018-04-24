@@ -15,7 +15,7 @@ class RoundedButton: UIButton{
     }
     
     func setupView(){
-        self.layer.cornerRadius = 13
+        self.layer.cornerRadius = self.frame.height/2
         self.clipsToBounds = true
     }
     

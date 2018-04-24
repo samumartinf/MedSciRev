@@ -15,7 +15,7 @@ class RoundedLbl: UILabel{
     }
     
     func setupView(){
-        self.layer.cornerRadius = self.frame.width/2
+        self.layer.cornerRadius = self.frame.height/2
         self.clipsToBounds = true
     }
     
